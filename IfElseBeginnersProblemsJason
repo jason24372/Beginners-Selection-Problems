@@ -1,0 +1,31 @@
+print("You are exploring a forest and come to a river.")
+
+option = input ("Do you choose to swim across the river or wait for a boat? (Swim/ Wait)")
+
+if option == "swim":
+        print("You get eaten.")
+if option == "wait":
+        print("Coastguard comes." )
+        
+print("You come to a cave")
+
+option = input ("Do you want to venture inside or walk on? (Venture/Walk)")
+
+if option == "venture":
+    print("You are squished by boulders never to be seen again. Game over.")
+    
+if option == "walk":
+    print ("You carry on")
+        
+print ("You're at a crossroads.")
+
+option = input ("Do you go left, right, or straight? (Left/ Right/ Straight)")
+
+if option == "left":
+    print ("You are trampled by a herd of wildebeest. Game over")
+    
+if option == "straight":
+    print("You get stung by a poisonous wasp. Game over.")
+    
+if option == "right":
+    print("You march on and find the buried treasure! Yippee!!")
