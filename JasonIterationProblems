@@ -1,0 +1,28 @@
+password = "secret"
+
+while True:
+    user_input = input("Enter Password: ")
+    if input == password:
+        print("Correct Password")
+        break
+    else:
+        print("Incorrect Password")
+        
+
+    num_times = int(input("Enter a number: "))
+name = input("Enter your name: ")
+
+for _ in range(num_times):
+    print(name)
+
+um = int(input("Enter an integer.: "))
+
+if num > 1:
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            print(num, "Not a Prime Number.")
+            break
+    else:
+        print(num, "Is a prime number.")
+else:
+    print(num, "Not a Prime Number.")
