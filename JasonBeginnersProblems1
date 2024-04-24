@@ -1,0 +1,10 @@
+minutes = int(input("Enter the number of minutes: "))
+seconds = minutes * 60
+
+cruella_cards = int(input("Enter the number of birthday cards Cruella received: "))
+jane_cards = cruella_cards * 2
+
+age_years = int(input("Enter your age in years: "))
+age_days = age_years * 365
+print ("You are [ ] days old.")
+days_to_100 = (100 - age_years) * 365
