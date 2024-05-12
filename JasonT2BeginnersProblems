@@ -1,0 +1,49 @@
+\\Task - Biggest, Smallest and Average//
+
+numsList = [7, 6, 23, 8.18, 18, 8, 7.2, 85, 915, 12]
+
+biggest = max(numsList)
+biggest_index = numsList.index(biggest)
+
+smallest = min(numsList)
+smallest_index = numsList.index(smallest)
+
+average = sum(numsList) / len(numsList)
+
+
+\\Task - Same Start and End//
+
+stringsList = ["abc", "123", "2332", "aBBA", "heelloo", "1212", "DcEfD"]
+
+def same_start_and_end(string):
+    return string[0].lower() == string[-1].lower()
+
+count = sum(1 for string in stringsList if same_start_and_end(string))
+
+print("Number of strings with the same character at the start and end:", count)
+
+
+\\Task - I Like Pesto (a lot)//
+
+iLikePesto = [input("What's your favorite food? ") for _ in range(8) if input() == 'Pesto']
+otherFoods = [input("What's your favorite food? ") for _ in range(8) if input() != 'Pesto']
+
+pesto_count = len(iLikePesto)
+
+print(f"Pesto is loved by {pesto_count} people!")
+for _ in range(pesto_count):
+    print("I like pesto")
+
+\\Task - List of (good) Cereals//
+
+cerealList = []
+
+while True:
+    cereal = input("Enter Cereal: ")
+    if cereal.lower() == 'sultana and bran' or cereal.lower() == 'weetbix':
+        break
+    cerealList.append(cereal)
+
+
+
+
