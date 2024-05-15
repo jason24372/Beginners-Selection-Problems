@@ -1,0 +1,38 @@
+\\Is it a triangle?//
+
+def triangleTest(side1, side2, side3):
+    return side1 + side2 > side3 and side1 + side3 > side2 and side2 + side3 > side1
+
+side1 = 3
+side2 = 4
+side3 = 5
+
+\\Greetings!//
+
+def greet(name, time):
+    if time < 12:
+        return f"Good morning, {name}!"
+    elif time < 18:
+        return f"Good afternoon, {name}!"
+    else:
+        return f"Good evening, {name}!"
+
+def get_time():
+    while True:
+        try:
+            time = int(input("What time is it (0-23): "))
+            if 0 <= time <= 23:
+                return time
+            else:
+                print("Please enter a valid time between 0 and 23.")
+        except ValueError:
+
+
+\\Even Numbers://
+
+def getEven(numbers):
+    return [num for num in numbers if num % 2 == 0]
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+print(getEven(numbers))
